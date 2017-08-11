@@ -1,0 +1,11 @@
+# /etc/inittab/
+#启动 脚本/rcs
+::sysinit:/etc/init.d/rcS
+#启动shell
+::askfirst:-/bin/sh
+#重启关机前卸载文件系统
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r
+
+
+
