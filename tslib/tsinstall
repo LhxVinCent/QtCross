@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#echo "ac_cv_func_malloc_0_nonnull=yes" >arm-linux.cache
+./configure --host=arm-linux Cac_cv_func_malloc_0_nonnull=yes CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++ -prefix=$PWD/tslib
